@@ -86,8 +86,8 @@ public class ServerManager {
 
     public static void main(String[] args) {
         timeStart = TimeUtil.getTimeNow("dd/MM/yyyy HH:mm:ss");
+        ServerBroadcaster.startBroadcasting(14445); // <--- Thêm dòng này vào đây
         ServerManager.gI().run();
-
     }
 
     public void run() {

@@ -67,8 +67,9 @@
 - Tiến hành **Import** file cơ sở dữ liệu (`.sql`) đi kèm vào database vừa tạo.
 
 ### Bước 3: Khởi động Server
-1. Nhấp đúp chuột vào file `Run.bat` nằm trong thư mục **Login**.
-2. Tiếp tục nhấp đúp chuột vào file `Run.bat` nằm trong thư mục **Server** và đợi khoảng 10 giây để hệ thống hoàn tất tải dữ liệu.
+1. Nhấp đúp chuột vào file `Run.bat` nằm trong thư mục **Sever**
+2. Tiếp tục nhấp đúp chuột vào file `Run.bat` nằm trong thư mục **Login**  để hệ thống hoàn tất tải dữ liệu.
+**Lưu Ý:** Chạy của bên Sever trước rồi lập tức chạy của bên Login
 
 ### Bước 4: Trải nghiệm game
 - Truy cập vào đường dẫn thư mục `AppLocal/NroYanii.exe` để mở Client và bắt đầu bước chân vào thế giới Ngọc Rồng!
