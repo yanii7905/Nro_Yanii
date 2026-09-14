@@ -6,7 +6,7 @@
   <h1 align="center">NRO - YANII OFFLINE</h1>
 
   <p align="center">
-    Trợ chơi ngoại tuyến tái hiện nguyên tác Ngọc Rồng Online. Hóa thân thành anh hùng thuộc 3 hành tinh: Trái Đất, Xayda, Namếc, luyện tập nâng cao sức mạnh và chiến đấu chống lại các thế lực hắc ám.
+    Trò chơi ngoại tuyến tái hiện nguyên tác Ngọc Rồng Online. Hóa thân thành anh hùng thuộc 3 hành tinh: Trái Đất, Xayda, Namếc, luyện tập nâng cao sức mạnh và chiến đấu chống lại các thế lực hắc ám.
     <br />
     <br />
     <a href="#-hướng-dẫn-nhanh"><strong>Khám phá ngay »</strong></a>
@@ -50,13 +50,28 @@
 
 Để khởi chạy và trải nghiệm mượt mà hệ thống, bạn thực hiện lần lượt theo các bước sau:
 
-1. **Chuẩn bị môi trường:** Cài đặt sẵn **JDK 21** và bật cụm **Apache/MySQL** trong **XAMPP**.
-2. **Giải nén:** Tiến hành giải nén File Source của game và mã nguồn Web đăng ký (và Unzip file resources.assets trong AppLocal).
-3. **Cấu hình Database:** Tạo mới cơ sở dữ liệu `ngocrong` trong phpMyAdmin và tiến hành import file `.sql` đi kèm.
-4. **Khởi động Server:** 
-   - Nhấp đúp vào file `Run.bat` trong thư mục **Login**.
-   - Tiếp tục nhấp đúp vào file `Run.bat` trong thư mục **Server** và đợi khoảng 10 giây để hệ thống hoàn tất tải dữ liệu.
-5. **Trải nghiệm:** Truy cập vào thư mục `AppLocal/NroYanii.exe` để mở Client và bắt đầu vào game.
+### Bước 1: Chuẩn bị môi trường & Cài đặt JDK 21
+1. Cài đặt sẵn **JDK 21** trên máy tính của bạn.
+2. Cấu hình biến môi trường cho Java:
+   - Nhấn phím `Windows + S`, tìm kiếm từ khóa **environment variables** và chọn **Edit the system environment variables**.
+   - Nhấp vào nút **Environment Variables...** ở góc dưới bên phải.
+   - Tại mục **System variables**, nhấn **New...** để tạo biến mới:
+     - **Variable name:** `JAVA_HOME`
+     - **Variable value:** `C:\Program Files\Java\jdk-21`
+   - Tìm biến `Path` trong danh sách System variables, chọn nó rồi nhấn **Edit...**, chọn **New** và thêm vào:
+     - `;%JAVA_HOME%\bin`
+3. Khởi động và bật cụm dịch vụ **Apache / MySQL** trong ứng dụng **XAMPP**.
+
+### Bước 2: Cấu hình Database
+- Truy cập vào `phpMyAdmin`, tạo mới một cơ sở dữ liệu (Database) với tên `ngocrong`.
+- Tiến hành **Import** file cơ sở dữ liệu (`.sql`) đi kèm vào database vừa tạo.
+
+### Bước 3: Khởi động Server
+1. Nhấp đúp chuột vào file `Run.bat` nằm trong thư mục **Login**.
+2. Tiếp tục nhấp đúp chuột vào file `Run.bat` nằm trong thư mục **Server** và đợi khoảng 10 giây để hệ thống hoàn tất tải dữ liệu.
+
+### Bước 4: Trải nghiệm game
+- Truy cập vào đường dẫn thư mục `AppLocal/NroYanii.exe` để mở Client và bắt đầu bước chân vào thế giới Ngọc Rồng!
 
 ---
 
